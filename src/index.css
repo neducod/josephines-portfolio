@@ -1,9 +1,18 @@
-*{
-  padding: 0;
+* {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 :root{
+  margin: 0;
+  padding: 0;
+  width: 100%;
   --base-color:  rgb(252, 208, 215);
   --text-color: black;
   --base-variant: rgb(221, 161, 170);
@@ -558,7 +567,8 @@ clip-path: polygon(
 
 /*  */
 footer{
-  padding: 35px 40px;
+  /* display: block; */
+  padding: 35px 40px; 
   background-color: var(--footer-color);
 }
 #footer-icons{
@@ -931,7 +941,6 @@ footer{
        display: flex;
        justify-content: center;
        align-items: center;
-       /* flex-direction: column; */
        flex-wrap: wrap;
    }
    #about{
@@ -985,188 +994,3 @@ footer{
        padding: 15px;
    }
 }
-@media (min-width: 481px) and (max-width: 606px){
-
-}
-/*
-@media (min-width: 481px) and (max-width: 606px) {
-   .hero{
-       flex-direction: column;
-   }
-}*/
-/*
-@media (min-width: 607px) and (max-width: 614px) {
-   .dp{
-       width: 100px;
-   }
-   #web-dev-img{
-       width: 60px;
-   }
-   .about-mobile{
-       display: none;
-   }
-}
-*/
-/*
-@media (max-width: 768px) {
-   header {
-       padding: 30px 20px;
-   }
-   #nav-links{
-       display: none;
-       flex-direction: row;
-       position: absolute;
-       top: 70px;
-       background-color: rgb(224, 166, 185);
-       right: 20px;
-       width: 200px;
-       padding: 1rem;
-       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-   }
-   #nav-links ul{
-       flex-direction: column;
-   }
-   #nav-links ul li{
-       flex-direction: column;
-   }
-   #nav-links.show{
-       display: flex;
-   }
-   .hamburger{
-       display: block;
-   }
-   .xx{
-       display: none;
-   }
-   #about{
-       display: none;
-   }
-   .about-mobile{
-       display: block !important;
-   }
-}
-*/
-/*
-@media (min-width: 711px) and (max-width: 783px) {
-   nav{
-       gap: 280px;
-   }
-   #about{
-       display: none;
-   }
-   .about-mobile{
-       display: block !important;
-   }
-}
-*/
-/*
-@media (min-width: 784px) and (max-width: 796px) {
-   nav{
-       gap: 140px;
-   }
-   #about{
-       display: none;
-   }
-   .about-mobile{
-       display: block !important;
-   }
-}
-*/
-/*
-@media (min-width: 797px) and (max-width: 848px){
-   #about{
-       display: none;
-   }
-   .about-mobile{
-       display: block !important;
-   }
-   .about-mobile h4{
-       display: block;
-   }
-   .about-mobile-a{
-       display: block;
-   }
-   .about-mobile-aa{
-       display: block;
-   }
-}
-*/
-/*
-@media (min-width: 849px) and (max-width: 1071px) {
-   .about-mobile{
-       display: none;
-   }
-   .about-mobile:last-child{
-       display: none;
-   }
-   .about-mobile h4{
-       display: none;
-   }
-   .about-mobile-a{
-       display: none;
-   }
-   .about-mobile-aa{
-       display: block;
-   }
-}
-*/
-
-
-
-
-
-
-/*
-.about-mobile{
-   margin: 40px; 
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   place-items: center;
-   justify-content: center;
-   align-items: center;
-   place-self: center;
-   gap: 20px;
-}
-.about-mobile h4{
-   font-family: "Noto Sans JP", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 400;
-   font-style: normal;
-   color: var(--text-color);
-}
-.about-mobile-a{
-   flex: 1;
-   align-items: stretch;
-   overflow: hidden; 
-   display: inline-block;
-   padding: 30px; 
-   max-width: 600px; 
-   width: 80%;  
-   margin: auto;
-   box-sizing: border-box;
-   font-size: clamp(1rem, 2vw, 1.5rem);
-   border-radius: 20px;
-   border: 2px solid black;
-   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-   background-image: linear-gradient(144deg, var(--base-variant), var(--linear-variant) 50%, rgb(146, 229, 237));
-   transition: 0.5 ease;
-}
-.about-mobile-aa{
-   flex: 1;
-   align-items: stretch;
-   overflow: hidden; 
-   display: inline-block;
-   padding: 30px; 
-   max-width: 600px; 
-   width: 80%;  
-   margin: auto;
-   box-sizing: border-box;
-   font-size: clamp(1rem, 2vw, 1.5rem);
-   border-radius: 20px;
-   border: 2px solid black;
-   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-   background-image: linear-gradient(144deg, var(--base-variant), var(--linear-variant) 50%, rgb(146, 229, 237));
-   transition: 0.5 ease;
-}
-*/

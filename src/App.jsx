@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-
+import image from './assets/josephinejeromepiccopy.jpeg';
 
 function App() {
 
@@ -51,8 +51,10 @@ function App() {
       </div>
 
       <div className="dp">
+        <img src={image} alt="web developer picture"  id="web-dev-imgg"/>
+
         <img src="/Image/josephinejeromepic.jpeg" alt="web developer picture" id="web-dev-img" />
-        <img src="/Image/josephinejeromepic copy.jpeg" alt="web developer picture" id="web-dev-imgg" />
+
       </div>
 
       <div className="xx">
@@ -258,15 +260,13 @@ function App() {
         </div>
     </div>
 
-      <footer data-aos="fade-right">
+      <footer>
       <div id="footer-icons">
         <h6>Let's Connect</h6>
         <p>────୨ৎ────</p>
 
         <div
           className="social-icons"
-          data-aos="fade-down-right"
-          data-aos-duration="3000"
         >
           <a
             href="https://x.com/nedu_nony"
