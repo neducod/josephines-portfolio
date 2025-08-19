@@ -4,8 +4,11 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import image from './assets/josephinejeromepiccopy.jpeg';
 
-function App() {
+import React, { useEffect} from "react";
 
+
+
+function App() {
   return (
     <>
     <header id='myHeader'>
@@ -265,9 +268,7 @@ function App() {
         <h6>Let's Connect</h6>
         <p>────୨ৎ────</p>
 
-        <div
-          className="social-icons"
-        >
+        <div className="social-icons" >
           <a
             href="https://x.com/nedu_nony"
             className="social-icon x"

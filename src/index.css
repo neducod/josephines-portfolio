@@ -35,8 +35,9 @@ html, body, #root {
 body{
   background-color: var(--base-color); 
 }
+/*
 #theme-switch{
-  /* width: 50px;*/ 
+  /* width: 50px;*
   padding: 0;
   border-radius: 50%;
   background-color: var(--black-pink);
@@ -58,6 +59,7 @@ body{
 .darkmode #theme-switch svg:last-child{
   display: block;
 }
+*/
 #myHeader{
   padding: 40px 40px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -647,6 +649,14 @@ footer{
 
 
 
+.hamburger{
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.hamburger svg{
+  background-color: var(--svg);
+}
 
 
 
@@ -668,6 +678,7 @@ footer{
    margin: auto;
    flex-wrap: wrap;
    gap: 20px;*/
+   display: none;
    padding: 10px;
    margin-top: 40px;
 }
