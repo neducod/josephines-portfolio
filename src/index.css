@@ -566,6 +566,141 @@ clip-path: polygon(
 }
 /*  */
 
+#contact-me{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+#h1{
+  color: var(--text-color);
+  font-family: "Patrick Hand SC", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#p1{
+  color: var(--text-color);
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.p1{
+  color: var(--text-color);
+  font-family: "Baloo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center; 
+  padding: 10px;
+}
+#contact-form{
+  --input-focus: #2d8cf0;
+  --font-color: #323232;
+  --font-color-sub: #666;
+  --bg-color: #fff;
+  --main-color: #323232;
+  /* background: lightgrey; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 13px;
+  border-radius: 16px;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  width: 740px;
+  padding-left: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#contact-form:hover{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+
+  transform: scale(1.05) translateX(10px);
+  /* transform: scale(0.05); */
+}
+.input{
+  width: 90%;
+  height: 54px;
+  border-radius: 17px;
+  border: 2px solid var(--main-color);
+  background-color: var(--header-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 13px;
+  font-weight: 200;
+  color: var(--font-color);
+  padding: 6px 20px;
+  outline: none;
+
+  transition: 0.3s ease-out;
+}
+/* .input::placeholder{
+  /* color: var(--text-color); *
+} */
+label{
+  font-family: "Noto Sans JP", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+}
+.input:focus{
+  border: 2px solid pink;
+}
+.message{
+  /* max-width: 400px; */
+  width: 90%;
+  height: 200px; 
+
+  border-radius: 8px;
+  border: 2px solid var(--main-color);
+  background-color: var(--header-color);
+  box-shadow: 4px 4px var(--main-color);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--font-color);
+  padding: 8px 30px;
+  outline: none;
+
+
+  transition: 0.3s ease-out;
+}
+.contact-btn{
+  /* width: 170px; */
+  width: 90%;
+  height: 42px;
+  border: 1px solid #e5d9e2;
+  background-color: var(--contact-btn);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  /* color: var(--contact-btn-text); */
+  border-radius: 10px;
+  transition: 0.3s ease-out;
+
+  margin: 13px;
+
+  color:   var(--text-color);
+}
+.contact-btn:hover{
+  background-color: var(--form-color);
+  border: 1px solid black;
+  transition: 0.5s ease;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+.contact-img-wrapper{
+  display: flex;
+  margin: 20px;
+  gap: 10px;
+}
+.contact-img{
+  width: 25px;
+}
 
 /*  */
 footer{

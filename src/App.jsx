@@ -2,12 +2,84 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import image from './assets/josephinejeromepiccopy.jpeg';
 
 import React, { useEffect} from "react";
 
+import phoneIcon from './assets/icons8-phone-100.png';
+import whatsappIcon from './assets/icons8-whatsapp.svg';
+// import image from './assets/josephinejerome.jpeg';
 
 
+
+
+
+// // // Contact Form component (no export)
+// // function InteractiveContactForm() {
+// //   const [formData, setFormData] = useState({
+// //     name: "",
+// //     email: "",
+// //     message: "",
+// //   });
+
+// //   const [status, setStatus] = useState("");
+
+// //   const handleChange = (e) => {
+// //     setFormData({ ...formData, [e.target.name]: e.target.value });
+// //   };
+
+// //   const handleSubmit = (e) => {
+// //     e.preventDefault();
+// //     setStatus("Thank you! Your message has been sent.");
+// //     setFormData({ name: "", email: "", message: "" });
+// //   };
+
+
+
+//   return (
+//     <div id="contact-me">
+//       <h1>Reach Out</h1>
+//       <form onSubmit={handleSubmit}>
+//         <input
+//           type="text"
+//           name="name"
+//           placeholder="Josephine 🧸ྀི"
+//           value={formData.name}
+//           onChange={handleChange}
+//           required
+//         />
+//         <input
+//           type="email"
+//           name="email"
+//           placeholder="Josephine@gmail.com 🧸ྀི"
+//           value={formData.email}
+//           onChange={handleChange}
+//           required
+//         />
+//         <textarea
+//           name="message"
+//           placeholder="Hello, Engr Josephine..."
+//           value={formData.message}
+//           onChange={handleChange}
+//           required
+//         ></textarea>
+//         <button type="submit">Send Your Message 🌷</button>
+//       </form>
+//       {status && <p>{status}</p>}
+//     </div>
+//   );
+// }
+
+
+
+
+
+
+
+
+
+
+
+//  <img src="/Image/josephinejeromepic.jpeg" alt="web developer picture" id="web-dev-img" />
 function App() {
   return (
     <>
@@ -54,9 +126,8 @@ function App() {
       </div>
 
       <div className="dp">
-        <img src={image} alt="web developer picture"  id="web-dev-imgg"/>
-
-        <img src="/Image/josephinejeromepic.jpeg" alt="web developer picture" id="web-dev-img" />
+        {/* <img src={image} alt="web developer picture" id="web-dev-imgg"/> */}
+        <img src="/josephinejerome.jpeg" alt="web developer picture" id="web-dev-imgg" />
 
       </div>
 
@@ -69,7 +140,7 @@ function App() {
     </div>
 
 
-    <div id="about-mobile" style={{display: "none;"}}>
+    <div id="about-mobile" style={{display: "none"}}>
             <h4>A little about me :  </h4>
             <div className="about-mobile-a">
                 <p>I graduated from AltSchool Africa in 2024 and am currently expanding my knowledge while building real-world projects to strengthen my skills.</p>
@@ -100,7 +171,7 @@ function App() {
                    <div className="card_content">
                         <h1>My Hobbies</h1>
                         <p>When I am not coding;</p>
-                        <div class="first-sectionn">
+                        <div className="first-sectionn">
                             <p>˚.🎀༘⋆ I am cooking,</p> 
                             <p>˚.🎀༘⋆Knitting,</p>
                             <p>˚.🎀༘⋆Reading,</p>
@@ -262,6 +333,173 @@ function App() {
             </div>
         </div>
     </div>
+
+
+{/* 
+    <div id="contact-me">
+      <h1 id="h1">Reach Out</h1>
+      <p id="p1">
+        Have a project in mind or want to chat about coding? I am currently open
+        to freelance work, internships, or collaborative projects
+      </p>
+      <p className="p1">
+        Send me a message, let's create something amazing together!
+      </p>
+
+      <form id="contact-form" className="move" onSubmit={handleSubmit}>
+        <label htmlFor="user_name">Your Name</label>
+        <input
+          type="text"
+          name="name"
+          id="user_name"
+          placeholder="Josephine 🧸ྀི"
+          required
+          className="input"
+          value={formData.name}
+          onChange={handleChange}
+        />
+
+        <label htmlFor="user_email">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          id="user_email"
+          placeholder="Josephine@gmail.com 🧸ྀི"
+          required
+          className="input"
+          value={formData.email}
+          onChange={handleChange}
+        />
+
+        <label htmlFor="message">Your Message</label>
+        <textarea
+          name="message"
+          id="message"
+          placeholder="Hello, Engr Josephine..."
+          required
+          className="message"
+          value={formData.message}
+          onChange={handleChange}
+        ></textarea>
+
+        <button type="submit" className="contact-btn">
+          Send Your Message 🌷
+        </button>
+      </form>
+
+      {status && <p className="success-message">{status}</p>}
+
+      <p>────୨ৎ────</p>
+
+      <div className="contact-img-wrapper">
+        <a href="https://wa.me/2348188136851" target="_blank" rel="noopener noreferrer">
+          <img src={whatsappIcon} className="contact-img" alt="WhatsApp" />
+        </a>
+        <a href="tel:+2348188136851">
+          <img src={phoneIcon} className="contact-img" alt="Phone" />
+        </a>
+      </div>
+
+      <p>“I’ll try my best to respond within 24 hours. Looking forward to hearing from you!”</p>
+    </div>
+
+*/}
+
+<div id="contact-me">
+      <h1 id="h1">Reach Out</h1>
+      <p id="p1">
+        Have a project in mind or want to chat about coding? I am currently open to freelance work, internships, or collaborative projects
+      </p>
+      <p className="p1">Send me a message , let's create something amazing together!</p>
+
+      <div>
+        <form
+          id="contact-form"
+          className="move"
+          action="https://formsubmit.co/nedunony16@gmail.com"
+          method="POST"
+        >
+          <label htmlFor="user_name">Your Name</label>
+          <input
+            id="user_name"
+            type="text"
+            name="name"
+            placeholder="Josephine 🧸ྀི"
+            required
+            className="input"
+          />
+
+          <label htmlFor="user_email">Your Email</label>
+          <input
+          id="user_email"
+          type="email"
+          name="email"
+          placeholder="Josephine@gmail.com🧸ྀི"
+          required
+          className="input"
+        />
+
+        <label htmlFor="message">Your Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Hello, Engr Josephine..."
+          required
+          className="message"
+        ></textarea>
+
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+        name="_captcha" 
+        // value="false"
+          type="hidden"
+          value="https://neducod.github.io/test-page/"
+          // name="_next"
+          // value="https://neducod.github.io/josephine-portfolio/thankyou.html"
+          // value="https://neducod.github.io/test-page/"
+        />
+        <input type="hidden" name="_subject" value="New message from your website" />
+        <input type="hidden" name="_template" value="box" />
+
+        <button type="submit" className="contact-btn">Send Your Message 🌷</button>
+        </form>
+      </div>
+
+      <p>────୨ৎ────</p>
+
+      <div className="contact-img-wrapper">
+        <a href="https://wa.me/2348188136851" target="_blank" rel="noreferrer noopener">
+          <img src={whatsappIcon} alt="WhatsApp" className="contact-img"  />
+        </a>
+        <a href="tel:+2348188136851">
+          <img src={phoneIcon} alt="Phone" className="contact-img" />
+        </a>
+      </div>
+
+      <p>“I’ll try my best to respond within 24 hours. Looking forward to hearing from you!”</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <footer>
       <div id="footer-icons">
