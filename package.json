@@ -1,16 +1,21 @@
 {
-  "homepage": "https://<your-username>.github.io/josephines-portfolio",
+  "homepage": "https://neducod.github.io/josephines-portfolio",
   "name": "josephines-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  
   "dependencies": {
+    "gsap": "^3.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1"
   },
