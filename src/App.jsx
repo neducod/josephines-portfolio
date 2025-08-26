@@ -93,7 +93,7 @@ function App() {
               </div>
               <div id="nav-links" className={open ? 'show' : ''}>
                   <ul>
-                      <li><a href="#about" id="about"  data-aos="zoom-out" data-aos-duration="3000">About</a></li>
+                      <li><a href="#mesection" id="about"  data-aos="zoom-out" data-aos-duration="3000">About</a></li>
                       <li><a href="#projects" data-aos="zoom-out-up" data-aos-duration="2000">Projects</a></li>
                       <li><a href="#contactme" data-aos="zoom-in" data-aos-duration="3000">Contact</a></li>
                       <li><a href="https://josephinesociallinks.vercel.app/" data-aos="zoom-out" data-aos-duration="2000">Socials</a></li>
@@ -109,7 +109,24 @@ function App() {
       </nav>
     </header>
 
-    <div className="hero">
+    <div className="hero-frame">
+      <p className="tagline">The Web Alchemist</p>
+      <h1>Hello, I'm <span>Josephine Jerome</span></h1>
+      <p className="description">
+        A Creative Frontend Developer passionate about crafting sleek, responsive, and intuitive digital experiences that make a lasting impression.
+      </p>
+      <div className="cta-buttons">
+        <button className="primary-btn">
+        <a href="/Josephine Jerome CV.pdf" target="_blank" rel="noopener noreferrer" download>Hire Me</a>
+        </button>
+        <button className="secondary-btn">
+          <a href="https://calendly.com/josephinejerome/30min" >Book a Call</a>
+        </button>
+      </div>
+    </div>
+
+
+    {/* <div className="hero">
       <div className="hero-text">
         <div className="hero-text-h4">
           <h5>Frontend Developer</h5>
@@ -118,8 +135,9 @@ function App() {
         <p>I love building clean code &amp; charming designs one pixel at a time.</p>
         <p>Let’s build something beautiful together.</p>
         <div className="hero-btns">
-          <a href="#projects">
-            <button>View My Work</button>
+          
+          <a href="#">
+            <button>Book a Call</button>
           </a>
           <a href="/Josephine Jerome CV.pdf" target="_blank" rel="noopener noreferrer" download>
             <button>My CV</button>
@@ -129,7 +147,7 @@ function App() {
       <div className="dp">
         <img src="/josephinejerome.jpeg" alt="web developer picture" id="web-dev-imgg" />
       </div>
-    </div>
+    </div> */}
 
 
     {/* <div id="about-mobile" style={{display: "none"}}>
@@ -177,7 +195,7 @@ function App() {
         </div>
     </div> */}
 
-    <div className="me-section">
+    <div className="me-section" id='mesection' >
       <div>
         <h3 className='me-section-h2'  data-aos="flip-left">About Josephine</h3>
         <div data-aos="fade-up-right">
@@ -585,7 +603,7 @@ function App() {
       <div data-aos="fade-right">
         <h1 className='contact-form-h1' data-aos="fade-down-right">Reach Out</h1>
         <p className='contact-form-p'>Have a project in mind or want to chat about coding? I am currently open to freelance work, internships, or collaborative projects</p>
-        <p className='contact-form-p'  data-aos="fade-up-right">Send a message let's crate something awesome together!</p>
+        <p className='contact-form-p'  data-aos="fade-up-right">Send a message let's create something awesome together!</p>
       </div>
       <div data-aos="zoom-in-left">
 
@@ -600,7 +618,7 @@ function App() {
             id="user_name"
             type="text"
             name="name"
-            placeholder="#"
+            placeholder="Your name"
             required
             className="input"
           />
@@ -610,7 +628,7 @@ function App() {
           id="user_email"
           type="email"
           name="email"
-          placeholder="yourgmail@gmail.com"
+          placeholder="Your email"
           required
           className="input"
         />
@@ -619,7 +637,7 @@ function App() {
         <textarea
           id="message"
           name="message"
-          placeholder="Hello, Engr Josephine..."
+          placeholder="Your message..."
           required
           className="message"
         ></textarea>
