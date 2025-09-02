@@ -12,6 +12,13 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
+
+import { Helmet } from "react-helmet-async";
+
+
+
+
 //  <img src="/Image/josephinejeromepic.jpeg" alt="web developer picture" id="web-dev-img" />
 function App() {
   useEffect(() => {
@@ -86,6 +93,23 @@ function App() {
 
   return (
     <>
+      <Helmet>
+        <title>Josephine Jerome | Frontend Developer in Nigeria</title>
+        <meta
+          name="description"
+          content="Hi, I'm Josephine Jerome — a frontend developer in Nigeria. I build fast, responsive, and modern React apps with clean UI."/>
+        <link rel="canonical" href="https://josephines-portfolio.vercel.app/"/>
+      </Helmet>
+
+
+
+
+
+
+
+
+
+
     <header id='myHeader' className={isScrolled ? 'scrolled' : ''}>
       <nav>
         <div className="nav-h">
@@ -710,7 +734,7 @@ function App() {
 
       <div className="footer-p">
         <p>
-          Made with love˚.🎀༘⋆ by{" "}
+          Made with love˚.🎀༘⋆ by{"Josephine Jerome"}
           <a
             href="https://x.com/nedu_nony"
             target="_blank"
