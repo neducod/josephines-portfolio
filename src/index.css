@@ -148,13 +148,13 @@ nav{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #E6E6FA;;
+  background-color: #E6E6FA;
   padding-top: 200px;
   padding-bottom: 180px;
 }
 .hero-frame span{
   /* background: linear-gradient(90deg, #8d1e43, orange, #E6E6FA); */
-  background: linear-gradient(90deg, #f0bb1c, rgb(131, 18, 48), #b9ee29); 
+  background: linear-gradient(90deg, #f0bb1c, #831230, #b9ee29); 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
